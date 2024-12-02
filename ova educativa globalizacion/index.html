@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVA: Globalización</title>
+    <link rel="stylesheet" href="link.css">
+</head>
+<body>
+
+    <div id="userIcon" class="oculto">
+        <img src="https://media.istockphoto.com/id/1130842565/es/vector/hacker-en-el-icono-del-ordenador-port%C3%A1til-ilustraci%C3%B3n-plana-de-hacker-en-el-icono-del-vector.jpg?s=2048x2048&w=is&k=20&c=KxUTpH7f9BH75-_ht3G2LySv6b8TVmW3veceB9iTpKs=" alt="Usuario registrado" title="Usuario registrado">
+    </div>
+
+    <section id="login" class="centrar">
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin" onsubmit="return iniciarSesion()">
+            <label for="loginUsername">Usuario:</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Contraseña:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <div id="contenidoPrincipal" class="oculto">
+        <nav>
+            <ul id="menuIzquierda">
+                <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="mostrarSeccion('informacion')">Información</a></li>
+                <li><a href="#" onclick="mostrarSeccion('recursos')">Recursos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('contenidos')">Contenidos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('juegos')">Juegos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('evaluacion')">Evaluación</a></li>
+                <li><a href="#" onclick="mostrarSeccion('creditos')">Créditos</a></li>
+            </ul>
+            <img src="https://ouch-cdn2.icons8.com/GVc7hMAbx6WUTAvaXb0CNLj-7y-EkJG8YuFrQPkKyEk/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMjgz/L2M5NDIxOWRmLWI3/MDMtNGIwZi1hYzM0/LTBhNDlmZGFkYmM4/NS5zdmc.png" alt="Imagen de fondo" id="imagenMenu">
+        </nav>
+
+        <section id="inicio" class="seccionVisible">
+            <h1>Bienvenido a la OVA de Globalización</h1>
+            <p>Explora los temas y descubre más sobre la globalización en sus múltiples aspectos.</p>
+        </section>
+
+        <section id="informacion" class="seccionOculta">
+            <h2>Información sobre la Globalización</h2>
+            <div>
+                <h3>Introducción a la Globalización</h3>
+                <p>La globalización es un fenómeno complejo que implica la creciente interconexión e interdependencia de los países, sociedades y economías en todo el mundo. Este proceso ha sido impulsado por avances tecnológicos, la apertura de mercados y el aumento del comercio internacional. A continuación, se presentan los conceptos, características y su impacto en diversas áreas específicas: económica, cultural, social y ambiental.</p>
+                <p>1. Definición general: Es el proceso mediante el cual se eliminan barreras geográficas, económicas, sociales y culturales, facilitando la integración global en aspectos políticos, económicos y culturales.</p>
+                <p>2. Enfoque económico: La globalización se entiende como la expansión del capitalismo a nivel mundial, caracterizado por mercados abiertos, flujo de capital y aumento de las relaciones comerciales entre países.</p>
+                <p>3. Enfoque cultural: Es el intercambio y mezcla de culturas, que puede llevar tanto a la homogeneización cultural como al fortalecimiento de las identidades locales.</p>
+            </div>
+            <div>
+                <h3>Impacto Económico</h3>
+                <p>Aspectos positivos:</p>
+                <ul>
+                    <li>Facilita el comercio internacional y el acceso a mercados globales.</li>
+                    <li>Incrementa la competencia, promoviendo la innovación y la eficiencia.</li>
+                    <li>Genera empleos, aunque no siempre en condiciones equitativas.</li>
+                </ul>
+                <p>Aspectos negativos:</p>
+                <ul>
+                    <li>Favorece la concentración de riqueza en grandes corporaciones y economías desarrolladas.</li>
+                    <li>Desplazamiento de industrias locales debido a la competencia internacional.</li>
+                    <li>Crisis económicas globalizadas, donde los problemas de un país afectan a otros.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Impacto Cultural</h3>
+                <p>Aspectos positivos:</p>
+                <ul>
+                    <li>Difusión de ideas, idiomas, arte y gastronomía a nivel mundial.</li>
+                    <li>Promueve la diversidad y el multiculturalismo.</li>
+                </ul>
+                <p>Aspectos negativos:</p>
+                <ul>
+                    <li>Erosión de culturas locales frente a tendencias globales dominantes.</li>
+                    <li>"McDonalización" o estandarización cultural, donde los valores y costumbres globales reemplazan tradiciones locales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="juegos" class="seccionOculta">
+            <h2>Juegos</h2>
+            <div>
+                <h3>Actividades de Educaplay</h3>
+
+                <div id="botonesjuegos" class="botones-juegos">
+                    <button class="j1" onclick="mostrarJuego('juego1')">Juego 1</button>
+                    <button class="j1" onclick="mostrarJuego('juego2')">Juego 2</button>
+                    <button class="j1" onclick="mostrarJuego('juego3')">Juego 3</button>
+                    <button class="j1" onclick="mostrarJuego('juego4')">Juego 4</button>
+                </div>
+
+                <div id="juego1" class="iframe-container">
+                    <iframe allow="fullscreen; autoplay;" allowfullscreen width="1200" height="690" frameborder="0" src="https://es.educaplay.com/juego/21428348-juego_de_parejas_globalizacion.html"></iframe>
+                </div>
+                
+                <div id="juego2" class="iframe-container">
+                    <iframe allow="fullscreen; autoplay;" allowfullscreen width="1200" height="690" frameborder="0" src="https://es.educaplay.com/juego/21480810-busqueda_de_palabras_globalizacion.html"></iframe>
+                </div>
+            
+                <div id="juego3" class="iframe-container">
+                    <iframe allow="fullscreen; autoplay;" allowfullscreen width="1200" height="690" frameborder="0" src="https://es.educaplay.com/juego/21664181-globalizacion.html"></iframe>
+                </div>
+            
+                <div id="juego4" class="iframe-container">
+                    <iframe allow="fullscreen; autoplay;" allowfullscreen width="1200" height="690" frameborder="0" src="https://es.educaplay.com/juego/21664804-juego_de_desorden_global.html"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="seccionOculta">
+            <h2>Recursos</h2>
+            <p>Aquí encontrarás materiales y enlaces útiles relacionados con la globalización.</p>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Globalizaci%C3%B3n" target="_blank">Wikipedia: Globalización</a></li>
+                <li><a href="https://concepto.de/globalizacion/" target="_blank">Globalización: caracteristicas</a></li>
+            </ul>
+        </section>
+
+        <section id="contenidos" class="seccionOculta">
+            <h2>Contenidos</h2>
+            <ul>
+                <li>Historia de la globalización</li>
+                <li>Globalización económica</li>
+                <li>Impactos culturales</li>
+            </ul>
+            <div class="iframe-youtube">
+                <iframe width="1200" height="690" src="https://www.youtube.com/embed/2-9wuGlZdq8?si=yeEkcmXcxbQAS48p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="iframe-youtube">
+                <iframe width="1200" height="690" src="https://www.youtube.com/embed/fpkn6Eagl58?si=c7yjPr46sserkN6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="evaluacion" class="seccionOculta">
+            <h2>Evaluación</h2>
+            <p>Pon a prueba tus conocimientos sobre la globalización con este cuestionario.</p>
+            <div class="iframe-youtube">
+                <div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;"><iframe src="https://quizizz.com/embed/quiz/674e1c755e05d90e643c6b02" title=" - Quizizz" style="flex:1;" frameBorder="0" allowfullscreen></iframe><a href="https://quizizz.com/admin?source=embedFrame" target="_blank">Explore more at Quizizz.</a></div>
+            </div>
+        </section>
+
+        <section id="creditos" class="seccionOculta">
+            <h2>Créditos</h2>
+            <p>Este proyecto fue desarrollado por:</p>
+            <div class="avatars-container">
+                <div class="avatar">
+                    <img src="https://www.learningbubbles.net/wp-content/uploads/2019/08/IMG_1109.jpg" alt="Avatar 1">
+                    <h3>Keymar Blandon</h3>
+                    <p>Rol: Programador </p>
+                </div>
+                <div class="avatar">
+                    <img src="https://www.aiscribbles.com/img/variant/large-preview/18614/?v=1972e3" alt="Avatar 2">
+                    <h3>Diego Gutierrez</h3>
+                    <p>Rol: Programador </p>
+                </div>
+                <div class="avatar">
+                    <img src="https://static.vecteezy.com/system/resources/previews/001/993/889/non_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg" alt="Avatar 3">
+                    <h3>Andrea Berrocal</h3>
+                    <p>Rol: Diseñadora </p>
+                </div>
+                <div class="avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR24MMErHmkaAVLE0PCWBGCiIhp6mow9ESyOw&s" alt="Avatar 4">
+                    <h3>Alejandra Perez</h3>
+                    <p>Rol: Diseñadora </p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OVA de Globalización. Todos los derechos reservados.</p>
+        <p>Visita más recursos en <a href="https://www.example.com" target="_blank">nuestra página oficial</a>.</p>
+    </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
